@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #0c1a2e;
+  color: #f0f9ff;
+  font-family: 'Space Grotesk', sans-serif;
+  min-height: 100vh;
+}
+
+h1, h2, h3 { font-family: 'Syne', sans-serif; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0c1a2e; }
+::-webkit-scrollbar-thumb { background: #0ea5e9; border-radius: 3px; }
