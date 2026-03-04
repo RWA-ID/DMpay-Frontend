@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — DMpay.eth</title>
+  <meta name="description" content="DMpay.eth Privacy Policy" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0c1a2e;
+      color: rgba(255,255,255,0.8);
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Syne:wght@700;800&display=swap');
+    header {
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    header a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    header span {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      color: white;
+      letter-spacing: -0.5px;
+    }
+    header span em { color: #38bdf8; font-style: normal; }
+    main {
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 36px;
+      color: white;
+      margin-bottom: 8px;
+    }
+    .date { color: rgba(255,255,255,0.4); font-size: 13px; margin-bottom: 48px; }
+    section { margin-bottom: 40px; }
+    h2 { color: white; font-weight: 600; font-size: 18px; margin-bottom: 12px; }
+    p { margin-bottom: 12px; }
+    ul { list-style: disc; padding-left: 20px; }
+    ul li { margin-bottom: 8px; }
+    a.sky { color: #38bdf8; }
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 24px;
+      margin-top: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.3);
+    }
+    footer a { color: rgba(255,255,255,0.3); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,0.6); }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="16" fill="#627EEA"/>
+        <path d="M16.001 5v8.284l7.001 3.129L16.001 5z" fill="white" fill-opacity="0.6"/>
+        <path d="M16.001 5L9 16.413l7.001-3.129V5z" fill="white"/>
+        <path d="M16.001 21.968v5.027l7.004-9.688-7.004 4.661z" fill="white" fill-opacity="0.6"/>
+        <path d="M16.001 26.995v-5.028L9 17.307l7.001 9.688z" fill="white"/>
+        <path d="M16.001 20.573l7.001-4.16-7.001-3.127v7.287z" fill="white" fill-opacity="0.2"/>
+        <path d="M9 16.413l7.001 4.16v-7.287L9 16.413z" fill="white" fill-opacity="0.6"/>
+      </svg>
+      <span>dmpay<em>.eth</em></span>
+    </a>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="date">Last updated: March 2026</p>
+
+    <div>
+      <section>
+        <h2>1. Introduction</h2>
+        <p>DMpay.eth ("DMpay", "we", "us", or "our") operates the decentralised application at <a href="https://app.dmpay.me" class="sky">app.dmpay.me</a>. This Privacy Policy explains how we collect, use, and protect information when you use our Service.</p>
+        <p>DMpay is a non-custodial, decentralised protocol. We do not custody funds, control private keys, or store messages. Most interactions occur directly on the Ethereum blockchain or via the XMTP protocol.</p>
+      </section>
+
+      <section>
+        <h2>2. Information We Collect</h2>
+        <p><strong style="color:white">a) Information you provide directly</strong></p>
+        <ul>
+          <li><strong style="color:white">X (Twitter) OAuth data:</strong> When you connect your X account, we receive your X handle, display name, and profile picture URL via OAuth. This data is stored locally in your browser (localStorage) and on our backend solely to associate your X identity with your Ethereum address for the profile page.</li>
+          <li><strong style="color:white">Ethereum wallet address:</strong> When you connect your wallet, your public Ethereum address is used to interact with the smart contracts. Wallet addresses are public on the blockchain.</li>
+          <li><strong style="color:white">USDC price setting:</strong> The price you set for receiving DMs is stored on-chain in the DMPayRegistry smart contract and is publicly readable.</li>
+        </ul>
+        <p style="margin-top:12px"><strong style="color:white">b) Information collected automatically</strong></p>
+        <ul>
+          <li><strong style="color:white">Blockchain data:</strong> All transactions (profile registrations, payments, ENS subdomain assignments) are recorded on the public Ethereum blockchain and are permanently accessible to anyone.</li>
+          <li><strong style="color:white">IPFS content:</strong> Profile pages pinned to IPFS are publicly accessible by their content hash.</li>
+          <li><strong style="color:white">Server logs:</strong> Our backend may collect standard server logs including IP addresses, request timestamps, and endpoints accessed, for security and debugging purposes.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Messages and XMTP</h2>
+        <p>Direct messages sent via DMpay use the XMTP protocol, which provides end-to-end encryption. DMpay does not have access to the content of your messages. Messages are stored in the XMTP network, not on DMpay servers. XMTP's own privacy policy governs message storage and handling.</p>
+      </section>
+
+      <section>
+        <h2>4. How We Use Your Information</h2>
+        <ul>
+          <li>To associate your X identity with your Ethereum wallet for profile display</li>
+          <li>To generate and pin your personalised profile page to IPFS</li>
+          <li>To assign an ENS subdomain under dmpay.eth to your account</li>
+          <li>To facilitate payments via the DMPayMessaging smart contract</li>
+          <li>To maintain security and prevent abuse of the Service</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Data Sharing</h2>
+        <p>We do not sell your personal data. We may share information with:</p>
+        <ul>
+          <li><strong style="color:white">IPFS / Pinata:</strong> Your profile page HTML is pinned to IPFS via Pinata for decentralised hosting.</li>
+          <li><strong style="color:white">Ethereum network:</strong> All on-chain interactions are public by the nature of the blockchain.</li>
+          <li><strong style="color:white">X Corp:</strong> OAuth authentication is handled by X. We receive only the data X provides via the OAuth flow.</li>
+          <li><strong style="color:white">Legal requirements:</strong> We may disclose information if required by law or to protect the rights and safety of our users.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Cookies and Local Storage</h2>
+        <p>We use browser localStorage to store:</p>
+        <ul>
+          <li>Your X profile data (handle, display name, profile picture URL)</li>
+          <li>Your wallet connection state</li>
+          <li>Your DM price setting (temporarily during registration)</li>
+        </ul>
+        <p>This data remains on your device and is cleared when you disconnect your wallet. We do not use tracking cookies or third-party analytics cookies.</p>
+      </section>
+
+      <section>
+        <h2>7. Data Retention</h2>
+        <p>On-chain data (wallet addresses, prices, ENS records, payment history) is permanent and immutable on the Ethereum blockchain — we cannot delete it. IPFS content pinned to your profile persists as long as it is pinned. Server logs are retained for up to 90 days. localStorage data is retained until you disconnect your wallet or clear your browser storage.</p>
+      </section>
+
+      <section>
+        <h2>8. Your Rights</h2>
+        <p>Depending on your jurisdiction you may have rights to access, correct, or delete personal data we hold off-chain. You can disconnect your X account at any time by disconnecting your wallet (which clears localStorage). For on-chain data, deletion is not technically possible due to the immutable nature of public blockchains. To exercise off-chain data rights, contact us at <a href="mailto:legal@dmpay.me" class="sky">legal@dmpay.me</a>.</p>
+      </section>
+
+      <section>
+        <h2>9. Security</h2>
+        <p>We implement reasonable technical measures to protect off-chain data. However, no system is perfectly secure. You are responsible for securing your own Ethereum private keys and wallet. DMpay cannot recover lost wallets or private keys.</p>
+      </section>
+
+      <section>
+        <h2>10. Children's Privacy</h2>
+        <p>The Service is not directed to individuals under the age of 18. We do not knowingly collect personal information from minors. If you believe a minor has used the Service, contact us at <a href="mailto:legal@dmpay.me" class="sky">legal@dmpay.me</a>.</p>
+      </section>
+
+      <section>
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy periodically. Material changes will be reflected by an updated "Last updated" date. Continued use of the Service after changes constitutes acceptance of the updated policy.</p>
+      </section>
+
+      <section>
+        <h2>12. Contact</h2>
+        <p>For privacy-related questions or requests, contact us at <a href="mailto:legal@dmpay.me" class="sky">legal@dmpay.me</a> or open an issue at our GitHub repository.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 DMpay.eth</span>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — DMpay.eth</title>
+  <meta name="description" content="DMpay.eth Terms of Service" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0c1a2e;
+      color: rgba(255,255,255,0.8);
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Syne:wght@700;800&display=swap');
+    header {
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    header a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    header span {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      color: white;
+      letter-spacing: -0.5px;
+    }
+    header span em { color: #38bdf8; font-style: normal; }
+    main {
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 36px;
+      color: white;
+      margin-bottom: 8px;
+    }
+    .date { color: rgba(255,255,255,0.4); font-size: 13px; margin-bottom: 48px; }
+    section { margin-bottom: 40px; }
+    h2 { color: white; font-weight: 600; font-size: 18px; margin-bottom: 12px; }
+    p { margin-bottom: 12px; }
+    ul { list-style: disc; padding-left: 20px; }
+    ul li { margin-bottom: 8px; }
+    a.sky { color: #38bdf8; }
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 24px;
+      margin-top: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.3);
+    }
+    footer a { color: rgba(255,255,255,0.3); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,0.6); }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="16" fill="#627EEA"/>
+        <path d="M16.001 5v8.284l7.001 3.129L16.001 5z" fill="white" fill-opacity="0.6"/>
+        <path d="M16.001 5L9 16.413l7.001-3.129V5z" fill="white"/>
+        <path d="M16.001 21.968v5.027l7.004-9.688-7.004 4.661z" fill="white" fill-opacity="0.6"/>
+        <path d="M16.001 26.995v-5.028L9 17.307l7.001 9.688z" fill="white"/>
+        <path d="M16.001 20.573l7.001-4.16-7.001-3.127v7.287z" fill="white" fill-opacity="0.2"/>
+        <path d="M9 16.413l7.001 4.16v-7.287L9 16.413z" fill="white" fill-opacity="0.6"/>
+      </svg>
+      <span>dmpay<em>.eth</em></span>
+    </a>
+  </header>
+
+  <main>
+    <h1>Terms of Service</h1>
+    <p class="date">Last updated: March 2026</p>
+
+    <div>
+      <section>
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing or using DMpay.eth ("DMpay", "the Service") at <a href="https://app.dmpay.me" class="sky">app.dmpay.me</a>, you agree to be bound by these Terms of Service. If you do not agree, do not use the Service. DMpay is a decentralised protocol — we act as an interface provider, not a custodian or intermediary of funds.</p>
+      </section>
+
+      <section>
+        <h2>2. Eligibility</h2>
+        <p>You must be at least 18 years old and have legal capacity to enter into agreements to use the Service. The Service is not available to users in jurisdictions where such services are prohibited. By using the Service you represent that you meet these requirements.</p>
+      </section>
+
+      <section>
+        <h2>3. Description of Service</h2>
+        <p>DMpay provides a decentralised interface that allows users to:</p>
+        <ul>
+          <li>Register a profile backed by an ENS subdomain under dmpay.eth</li>
+          <li>Set a price in USDC for others to initiate a direct message conversation</li>
+          <li>Send and receive end-to-end encrypted messages via the XMTP protocol</li>
+          <li>Make and receive USDC payments via the DMPayMessaging smart contract on Ethereum mainnet</li>
+        </ul>
+        <p style="margin-top:12px">All payments and profile registrations are executed directly on the Ethereum blockchain. DMpay does not custody, hold, or control any user funds at any time.</p>
+      </section>
+
+      <section>
+        <h2>4. Platform Fee</h2>
+        <p>DMpay charges a 2.5% protocol fee on each paid conversation opened. This fee is deducted automatically by the DMPayMessaging smart contract at the time of payment. The remaining 97.5% is distributed to the recipient. Fee rates may be updated in future contract versions.</p>
+      </section>
+
+      <section>
+        <h2>5. User Responsibilities</h2>
+        <ul>
+          <li>You are solely responsible for the security of your Ethereum wallet and private keys</li>
+          <li>You are responsible for all transactions you initiate on the blockchain</li>
+          <li>You must not use the Service to send spam, harass, threaten, or defraud other users</li>
+          <li>You must not impersonate any person or entity or misrepresent your affiliation</li>
+          <li>You must not use the Service for any illegal activity including money laundering or sanctions evasion</li>
+          <li>You must not attempt to exploit, hack, or disrupt the smart contracts or front-end application</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Blockchain Transactions &amp; Finality</h2>
+        <p>All transactions submitted to the Ethereum blockchain are irreversible. DMpay has no ability to reverse, cancel, or refund blockchain transactions once confirmed. You are responsible for verifying all transaction details before signing with your wallet. Gas fees are determined by the Ethereum network and are not controlled by DMpay.</p>
+      </section>
+
+      <section>
+        <h2>7. ENS Subdomains</h2>
+        <p>Upon registering a profile, DMpay will attempt to create an ENS subdomain under dmpay.eth (e.g. <span class="sky">yourhandle.dmpay.eth</span>) and set the IPFS contenthash pointing to your profile page. Subdomain availability and ENS resolution are subject to the Ethereum Name Service infrastructure, which DMpay does not control. DMpay reserves the right to manage the dmpay.eth parent domain.</p>
+      </section>
+
+      <section>
+        <h2>8. X (Twitter) Integration</h2>
+        <p>The X OAuth integration is provided as a convenience to verify identity and import public profile data. Your use of X is subject to <a href="https://twitter.com/en/tos" class="sky" target="_blank" rel="noopener noreferrer">X's Terms of Service</a>. DMpay is not affiliated with X Corp. We do not guarantee the availability or accuracy of data imported from X.</p>
+      </section>
+
+      <section>
+        <h2>9. Disclaimers</h2>
+        <p>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND. TO THE FULLEST EXTENT PERMITTED BY LAW, DMPAY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+        <p>DMPAY DOES NOT WARRANT THAT: (A) THE SERVICE WILL BE UNINTERRUPTED OR ERROR-FREE; (B) SMART CONTRACTS WILL OPERATE WITHOUT BUGS OR VULNERABILITIES; (C) ENS RESOLUTION WILL ALWAYS FUNCTION AS EXPECTED.</p>
+      </section>
+
+      <section>
+        <h2>10. Limitation of Liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, DMPAY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF FUNDS, LOSS OF DATA, OR LOSS OF PROFITS, ARISING FROM YOUR USE OF THE SERVICE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+      </section>
+
+      <section>
+        <h2>11. Intellectual Property</h2>
+        <p>The DMpay front-end application and smart contracts are open-source. The DMpay name, logo, and branding remain the property of DMpay. Smart contract code deployed on-chain is immutable and publicly auditable.</p>
+      </section>
+
+      <section>
+        <h2>12. Changes to Terms</h2>
+        <p>We may modify these Terms at any time. Material changes will be reflected by the "Last updated" date. Continued use of the Service after changes constitutes acceptance. If you disagree with the updated Terms, you must stop using the Service.</p>
+      </section>
+
+      <section>
+        <h2>13. Governing Law</h2>
+        <p>These Terms shall be governed by and construed in accordance with applicable law. Any disputes shall be resolved through binding arbitration to the extent permitted by law.</p>
+      </section>
+
+      <section>
+        <h2>14. Contact</h2>
+        <p>For questions about these Terms contact us at <a href="mailto:legal@dmpay.me" class="sky">legal@dmpay.me</a> or open an issue at our GitHub repository.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 DMpay.eth</span>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+  </footer>
+</body>
+</html>
