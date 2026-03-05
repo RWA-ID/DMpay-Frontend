@@ -35,7 +35,7 @@ export const REGISTRY_ABI = [
     name: "updateIPFSHash",
     type: "function",
     stateMutability: "nonpayable",
-    inputs: [{ name: "ipfsHash", type: "string" }, { name: "contenthash", type: "bytes" }],
+    inputs: [{ name: "ipfsHash", type: "string" }],
     outputs: []
   },
   {

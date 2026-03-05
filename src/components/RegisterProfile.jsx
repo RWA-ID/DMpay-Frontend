@@ -76,7 +76,7 @@ export default function RegisterProfile({ address, onSuccess, xUser }) {
           address: CONTRACTS.DMPayRegistry,
           abi: REGISTRY_ABI,
           functionName: 'updateIPFSHash',
-          args: ['ipfs://' + result.cid, result.contenthash || '0x'],
+          args: ['ipfs://' + result.cid],
         })
         setIpfsUpdateHash(txHash)
         return // wait for ipfsSuccess or ipfsError effect
